@@ -14,6 +14,7 @@
     <div id="app">
         <div class="panel scores">
             <div class="score">
+                <img src="./personagens/player.gif">
                 <h1>Jogador</h1>
                 <div class="life-bar">
                     <div class="life" :class="{danger: playerLife < 20}" :style="{width: playerLife + '%'}"></div>
@@ -21,6 +22,7 @@
                 <div>{{ playerLife }}%</div>
             </div>
             <div class="score">
+                <img src="./personagens/monster.gif">
                 <h1>Monstro</h1>
                 <div class="life-bar">
                     <div class="life" :class="{danger: monsterLife < 20}" :style="{width: monsterLife + '%'}"></div>
