@@ -51,6 +51,8 @@ new Vue({
             this.hurt('playerLife', 7, 12, false, 'Monstro', 'Jogador', 'monster')
         },
         heal(min, max) {
+            const healSound = new Audio('audio/heal.wav')
+            healSound.play()
             const heal = this.getRandom(min, max)
             this.playerLife = Math.min(this.playerLife + heal, 100)
             this.registerLog(`Jogador ganhou força de ${heal}.`, 'player-heal')
