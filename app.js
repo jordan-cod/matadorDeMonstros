@@ -3,6 +3,7 @@ new Vue({
     data: {
         running: false,
         playerLife: 100,
+        playerImage: './personagens/player.gif',
         monsterLife: 100,
         logs: []
     },
@@ -14,6 +15,7 @@ new Vue({
     methods: {
         startGame(){
             this.running = true
+            this.logs = []
             this.playerLife = 100
             this.monsterLife = 100
         },
@@ -24,6 +26,10 @@ new Vue({
             this.monsterLife = 100
         },
         attack(especial){
+            this.playerImage = './personagens/player-attack.gif'
+            setTimeout(() => {
+				this.playerImage = './personagens/player.gif'
+			}, 500)
             this.hurt('monsterLife', 5, 10, especial, 'Jogador', 'Monstro', 'player')
             if(this.monsterLife > 0) {
                 this.hurt('playerLife', 7, 12, false, 'Monstro', 'Jogador', 'monster')
