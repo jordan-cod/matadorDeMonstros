@@ -20,6 +20,8 @@ new Vue({
             this.monsterLife = 100
         },
         giveUp(){
+            const medinho = new Audio('audio/galinha.wav')
+            medinho.play()
             this.running = false
             this.logs = []
             this.playerLife = 100
