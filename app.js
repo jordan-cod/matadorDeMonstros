@@ -25,11 +25,16 @@ new Vue({
             this.playerLife = 100
             this.monsterLife = 100
         },
-        attack(especial){
+        getSoundAndImage(){
             this.playerImage = './personagens/player-attack.gif'
             setTimeout(() => {
 				this.playerImage = './personagens/player.gif'
+                const attack = new Audio('./audio/attack.wav')
+                attack.play()
 			}, 500)
+        },
+        attack(especial){
+            this.getSoundAndImage()
             this.hurt('monsterLife', 5, 10, especial, 'Jogador', 'Monstro', 'player')
             if(this.monsterLife > 0) {
                 this.hurt('playerLife', 7, 12, false, 'Monstro', 'Jogador', 'monster')
