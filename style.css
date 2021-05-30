@@ -60,3 +60,55 @@ html{
 .result .lose{
     color: red;
 }
+
+/* Área dos botões*/
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+.new-game{
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+.new-game:hover{
+    background-color: rgb(0, 0, 117);
+}
+.attack{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.attack:hover{
+    background-color: rgb(129, 3, 3);
+}
+.especial-attack{
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
+.especial-attack:hover{
+    background-color: rgb(223, 145, 2);
+}
+.heal{
+    background-color: rgb(0, 128, 0);
+    color: white;
+}
+.heal:hover{
+    background-color: rgb(1, 102, 1);
+}
+.give-up{
+    background-color: rgb(187, 187, 187);
+    color: black;
+}
+.give-up:hover{
+    background-color: rgb(173, 173, 173);
+}
