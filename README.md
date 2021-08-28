@@ -1,5 +1,7 @@
-# Como jogar 
+# Matador de Monstros
 
+
+### Como jogar
 <p>Você pode executar o jogo no seu computador seguindo os passos a seguir :</p>
 <ol>
   <li>Clicar em "CODE" > Download ZIP (ou pode clicar <a href="https://github.com/jordan-cod/matadorDeMonstros/archive/refs/heads/main.zip">aqui</a>).</li>
